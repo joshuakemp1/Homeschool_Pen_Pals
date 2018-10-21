@@ -32,7 +32,7 @@ for row in @spreadsheet.parse
     child_email = row[5].to_s
 
     for row_2 in @spreadsheet.parse
-     child_name = row_2[1].to_s # Bodie Herman - this loop just keeps going down the MATCHED TO column
+     child_name = row_2[1].to_s # this loop just keeps going down the MATCHED TO column
 
         if child_name == matched_childs_name
             puts "We have a match: Child name: #{child_name} and #{matched_childs_name}"  
